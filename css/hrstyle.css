@@ -1,0 +1,34 @@
+﻿.header{width:100%;height:50px;line-height:50px;background:#222;position: fixed;top:0;left: 0;}
+.nav li,.navItem li{float:left;height:50px;margin-left:20px;}
+.nav li a,.navItem li a{display:block;height:50px;line-height:50px;color:#eee;font-size:14px;padding:0 12px;}
+.nav li a.current{background:#efefef;color:#222;}
+.navItem li{float:left;height:50px;border-left:1px solid #2f2f2f;margin:0;}
+.navItem li a{width:30px;position: relative;height:50px;}
+.layout{padding:20px 20px 10px 20px;position: absolute;top:50px;left:0;bottom:0;right:0;overflow-y: auto;}
+.userInfo{height:80px;}
+.userTxt{height:60px;border-right:1px solid #efefef;padding:20px 30px 0 0;}
+.userTxt li{float:left;height:41px;border-left:1px solid #efefef;line-height:21px;margin-left:25px;padding:0 10px 0 20px;}
+.userInfo .iconBtn{width:30px;height:80px;margin-right:15px;}
+.column{width:49.3%;height:310px;}
+.columnInner{padding:10px 14px;}
+.calendar{width:100%;}
+.calendar thead td{height:30px;}
+.calendar thead td,.calendar thead th{text-align:right;}
+.calendar th,.calendar td{border:1px solid #efefef;height:29px;padding:5px 5px 0 0;}
+.calendar th{background:#f6faff;}
+.calendar th div,.calendar td div{height:100%;position: relative;}
+.calendar .num{font-family:Arial;position: absolute;top:0px;right:0;}
+.calendar span{position:absolute;bottom:3px;left:3px;}
+.ulOut{margin-right:-10px;}
+.ulList li{height:38px;line-height:38px;border:1px solid #efefef;padding:0 10px;margin-bottom:10px;}
+.ulList li .iconBtn{height:38px;}
+.ulList li span{color:#676767;}
+.tableWage th,.tableWage td{width:60px;padding:0 10px;height:26px;}
+.tableWage tr.second{height:38px;border:1px solid #efefef;}
+
+
+
+
+
+
+
