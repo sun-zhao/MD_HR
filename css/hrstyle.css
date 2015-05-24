@@ -208,9 +208,10 @@ ul.workArea li .intBox{background:none;border-color:#ccc;}
 .tableBoss{position: absolute;top:20px;left:20px;right:20px;bottom:20px;}
 .tableBoss table{width:100%;}
 .tableBoss table .user img{width:60px;height:60px;margin:0;float: none;}
-.tableBoss table td,.tableBoss table th{height:20px;border:1px solid #ccc;background:#fff;text-align: center;}
+.tableBoss table td,.tableBoss table th{height:25px;border:1px solid #ccc;background:#fff;text-align: center;}
 .tableBoss table th{height:20px;}
-
+.tableBoss table td .icon{position: inherit;vertical-align:-5px;margin:1px 10px 0 0;}
+.tableBoss table td a{color:#888;}
 
 
 .progress-radial {
