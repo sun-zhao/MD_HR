@@ -55,7 +55,7 @@
 .popMain .userList li img{width:40px;height:40px;}
 .popMain .userList li:hover{background: none;}
 .intBox,.search{width:158px;height:28px;line-height:28px;border:1px solid #efefef;background:#fff;position:relative;text-align: left;color:#aaa;}
-.arrow{display:inline-block;font-size:0;line-height:0;border-left:4px solid #fff;border-right:4px solid #fff;border-top:4px solid #aaa;position: absolute;top:50%;margin-top:-2px;right:10px;transition:0.2s;}
+.arrow{display:inline-block;font-size:0;line-height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:4px solid #aaa;position: absolute;top:50%;margin-top:-2px;right:10px;transition:0.2s;}
 .intBox .dropdown-menu{width:100%;right:-1px;top:30px;display:none;transition:0.3s;z-index:20;}
 .intBox:hover .dropdown-menu,.intBox.current .dropdown-menu{display: block;transition:0.3s;top:30px;}
 .intBox:hover .arrow,.intBox.current .arrow{transform: rotate(-180deg);transition:0.3s;}
@@ -94,19 +94,30 @@ span.block,.userInfoTable td .dataNormal{height:30px;line-height:30px;margin-top
 .ContractTitle .has-general label{line-height:38px;}
 /*组织架构*/
 .tree{min-height:500px;padding:20px;}
+.treeBig{padding-bottom:0;}
 .tree .user{position: relative;}
-.userDiv{width:298px;padding-bottom:5px;border:1px solid #efefef;background:#fff;position: relative;}
-.userDiv .title{background:#f6f6f6;padding:5px 10px;}
-.userDiv .title .txt_hidden{width:89%;text-align: left;}
+.userDiv{width:298px;border:1px solid #efefef;background:#fff;position: relative;}
+.userDiv div.clearfix{padding-bottom:5px;}
+.userDiv .title{height:35px;line-height:35px;background:#f6f6f6;padding:1px 10px;}
+.userDiv .title .txt_hidden{width:80%;text-align: left;}
 .treeMain{border-left:1px solid #aaa;min-height:30px;padding:20px 0 0 38px;position: relative;}
 .treeMain .userDiv{width:218px;}
+.treeBig .treeMain{padding-top:10px;}
 .treeSee .treeMain .userDiv{bottom:-35px;margin-top:20px;z-index:10;}
-.treeSee .treeMain.treeMainIn .userDiv{bottom:-21px;}
-.userDiv .has-general{top:5px;width:196px;}
-.leftLine{width:38px;position: absolute;left:-39px;top:70%;border-color:#aaa;}
-.delete{display:none;width:60px;height:60px;line-height:54px;border-radius:50%;position: absolute;top:0;left:0;background: url("../img/mask70.png") repeat;color:#fff;text-align: center;}
+.treeSee .treeMain.treeMainIn .userDiv{bottom:-15px;}
+.userDiv .has-general{top:3px;width:196px;}
+.leftLine{width:38px;position: absolute;left:-39px;top:69%;border-color:#aaa;}
+.lastDiv{bottom:-20px;}
+.lastDiv .leftLine{top:84%;}
+.delete{display:none;width:40px;height:40px;line-height:40px;border-radius:50%;position: absolute;top:0;left:0;background: url("../img/mask70.png") repeat;color:#fff;text-align: center;}
 .tree .user:hover .delete{display: block;}
 .treeSee .treeMain .userDiv .iconBtn{width:21px;height:21px;position: absolute;left:-12px;top:-11px;z-index:21;}
+.treeBig .userDiv{width:498px;}
+.treeBig span.user{width:60px;height:auto;min-height:40px;line-height:20px;overflow: hidden;text-align:center;}
+.treeBig .user img{display:block;margin:0 0 0 10px;}
+.treeBig .user .txt_hidden{width:60px;color:#888;}
+.treeBig .iconbtn{display:inline-block;width:20px;height:38px;position: relative;margin-left:10px;}
+
 .tableCard{width:100%;}
 .tableCard thead th,.tableCard td,.tableCard th{height:40px;min-width:12.5%;text-align: left;padding-left:20px;}
 .tableCard tbody th{color:#347cdc;}
@@ -142,7 +153,6 @@ span.block,.userInfoTable td .dataNormal{height:30px;line-height:30px;margin-top
 .checkWords li a:hover,.checkWords li a.current{color:#347cdc;}
 .userList2 li{width:11%;height:100px;padding:15px 0;}
 .userList2 li p.txt_hidden{line-height:18px;color:#333;margin-top:3px;}
-
 /*弹出*/
 .popInner{height:350px;margin:5px 3px 0 0;overflow: hidden;}
 .popMain{width:100%;position: relative;}
@@ -158,6 +168,51 @@ span.block,.userInfoTable td .dataNormal{height:30px;line-height:30px;margin-top
 .timeUl li{width:50%;float:left;text-align: center;}
 .popIn{height:170px;padding-top:10px;}
 .processIn{height:100px;}
+/*初始化*/
+.content{width:100%;height:100%;position: relative;overflow: hidden;}
+.pageList{position: absolute;left:0;right:0;top:15px;}
+.pageNum{display: inline-block;width:6px;height:6px;font-size:0;line-height:0;background:#ccc;border-radius:50%;margin:0 5px;position: relative;}
+.pageNum.current{width:8px;height:8px;border:1px solid #ccc;background:none;bottom:-2px;}
+.stepOut{width:99999px;height:100%;position: absolute;}
+.pageone{height:100%;position: relative;float: left;}
+.pageIn{width:520px;left:50%;position:absolute;top:120px;bottom:130px;margin-left:-260px;}
+.pageBtn{position: absolute;bottom:0;left:0;right:0;}
+.pageBtn .btn{height:50px;line-height:50px;}
+.company{position: absolute;left:0;right:0;top:30px;bottom:60px;overflow-y:auto;}
+.company ul li{height:46px;line-height:46px;border:1px solid #ccc;padding:0 0 0 20px;margin-top:10px;color:#666;}
+.company ul li .iconBtn{height:46px;display: none;}
+.company ul li:hover .iconBtn{display:inline-block;}
+.company .has-general input,.company .has-general .control-label{background:#efefef;}
+.company .has-general input{border-color:#aaa;font-size:13px;color:#aaa;}
+.workArea{border:1px solid #ccc;}
+ul.workArea li{margin:0;border:0;border-bottom:1px solid #ccc;margin:0 20px -1px 20px;padding:0;}
+ul.workArea li .intBox{background:none;border-color:#ccc;}
+.processBar{position: absolute;width:100%;top:50%;margin-top:-50px;}
+.processLayout{width:100%;height:20px;background:#ddd;border-radius:18px;border-top:1px solid #9a9a9a;}
+.processLayout .processBarIn{height:19px;background:#59a7f9;border-radius:18px;transition:0.3s;}
+.mailList{width:470px;background:#fff;position: absolute;top:0;bottom:0;right:20px;}
+.word{border:1px solid #efefef;border-width:1px 0;}
+.wordList{margin-left:60px;}
+.wordList li{font-family: Arial;float: left;width:7%;text-align: center;text-indent:5px;line-height:30px;margin-left:2px;}
+.wordList li a{display:block;color:#666;}
+.checkAll{display:inline-block;width:50px;background:#59a7f9;color:#fff;height:20px;line-height:20px;text-align: center;}
+.userTable{position: absolute;top:130px;bottom:50px;left:0;right:0;}
+.userTable table{width:100%;}
+.userTable table th,.userTable table td{padding-left:20px;height:30px;border-bottom:1px solid #efefef;}
+.userTable table td{height:80px;border-bottom:1px dashed #efefef;cursor: pointer;}
+.userTable table tr:hover td{background:#e5f1fe;}
+.userTable table .user{display:inline-block;padding:3px;width:40px;height:40px;line-height:normal;border:1px solid transparent;border-radius:50%;position:relative;bottom:-6px;left:-5px;}
+.userTable table .user img{float:none;margin:0;}
+.userTable table tr.current td .user{border:1px solid #387fdd;}
+.mailList .btn{height:40px;line-height:40px;position: absolute;left:0;bottom:0;}
+.tableBoss{position: absolute;top:20px;left:20px;right:20px;bottom:20px;}
+.tableBoss table{width:100%;}
+.tableBoss table .user img{width:60px;height:60px;margin:0;float: none;}
+.tableBoss table td,.tableBoss table th{height:20px;border:1px solid #ccc;background:#fff;text-align: center;}
+.tableBoss table th{height:20px;}
+
+
+
 .progress-radial {
   display: inline-block;
   position: relative;

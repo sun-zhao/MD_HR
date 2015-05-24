@@ -37,7 +37,8 @@ a:hover,.news-list li a:hover{text-decoration:none;}
 .visible{overflow:visible!important;}
 .visible-y{overflow-y:auto!important;}
 .hidden{overflow:hidden!important;}
-.relative{position: relative;}
+.relative{position: relative!important;}
+.pointer{cursor: pointer!important;}
 /*margin*/
 .nomar{margin:0!important;}
 .mar-auto{margin:0 auto!important;}
@@ -79,8 +80,8 @@ a:hover,.news-list li a:hover{text-decoration:none;}
 .color-black{color:#000;}
 .color-white{color:#fff;}
 .bg-white{background:#fff;}
-.color-c{color:#ccc;}
-.color-3{color:#333;}
+.color-c{color:#ccc!important;}
+.color-3{color:#333!important;}
 .color-6,.color-6 a{color:#666!important;}
 .color-8,.color-8 a{color:#888!important;}
 .color-a,.color-a td *{color:#aaa;}
@@ -164,6 +165,7 @@ a.tags:hover,a.keywords:hover{text-decoration:underline;}
 .font26{font-size:26px!important;}
 .font28{font-size:28px!important;}
 .font30{font-size:30px!important;}
+.font48{font-size:48px!important;}
 .l_th,.l_th *{text-decoration:line-through;}
 .l_th i,.l_th ul,.l_th ul li,.l_th ul li a{text-decoration: none;}
 .no_indent{text-indent: 0!important;}
@@ -183,8 +185,8 @@ a.tags:hover,a.keywords:hover{text-decoration:underline;}
 .bg2,.weekend{background:#f4f4f4;}
 .bg3,.holiday{background:#a3cefc;}
 /*头像*/
-.user{height:60px;line-height:60px;}
-.user img{width:60px;height:60px;border-radius:50%;float: left;margin-right:20px;}
+.user{height:40px;line-height:40px;}
+.user img{width:40px;height:40px;border-radius:50%;float: left;margin-right:10px;}
 .header .user{color:#eee;height:40px;line-height:40px;}
 .header .user img{width:40px;height:40px;border-radius:50%;float: left;margin-right:10px;}
 .pop .user{line-height:0;}
@@ -236,6 +238,7 @@ a:hover .icon,a.current .icon,a.current:hover .icon-check,a.current .icon-set,.i
 .icon-search2{background-position:0 -40px;}
 .icon-edit{background-position:0 -60px;}
 .icon-edit-mini{background-position:-20px -180px;}
+.icon-right{background-position:-40px -242px;}
 .icon-update{background-position:-40px -120px;}
 .icon-more{background-position:0 -80px;}
 .icon-more-mini{width:17px;background-position:-43px -40px;}
@@ -268,7 +271,8 @@ a:hover .icon,a.current .icon,a.current:hover .icon-check,a.current .icon-set,.i
 .icon-clander{background-position:-40px -200px;}
 .icon-card{background-position:-40px -180px;}
 .icon-down{width:20px;height:21px;background-position:-40px -221px;}
-.add{display:block;width:21px;height:56px;margin:-20px 0 20px -49px;position:inherit;background: url("../img/add.png") no-repeat;}
+.icon-sync{background-position:-40px -120px;}
+.add{display:block;width:21px;height:56px;margin:-10px 0 20px -49px;position:inherit;background: url("../img/add.png") no-repeat;}
 .icon-circle-t,.current .icon-circle-t{background-position: 0 -262px;font-size:12px;line-height:20px;text-align: center;color:#888;left:25px;}
 .current .icon-circle-t{background-position:-20px -262px;}
 @font-face {
