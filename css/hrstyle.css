@@ -42,8 +42,9 @@
 .noticeList li.unread em{display: inline-block;}
 /*档案管理*/
 .userList{padding:5px 5px 5px 20px;}
-.userList li{width:98px;height:80px;border-radius:3px;text-align: center;padding:10px 0;float: left;margin:5px 0;}
-.userList li:hover{background:#efefef;}
+.userList li{width:98px;min-height:60px;border-radius:3px;text-align: center;padding:5px 0;float: left;margin:5px 0;}
+.userList li a{padding:10px 0;}
+.userList li:hover a{background:#efefef;}
 .userList li .user{display:block;}
 .userList li .user img{float: none;margin:0;}
 .userList li p.txt_hidden{line-height:26px;color:#888;width:90%;}
@@ -78,6 +79,9 @@ span.block,.userInfoTable td .dataNormal{height:30px;line-height:30px;margin-top
 .pop{width:400px;height:400px;background:#fff;position: fixed;top:50%;left:50%;margin:-200px 0 0 -200px;z-index: 100;display: none;overflow: hidden;}
 .pop p span{padding:0 10px;color:#347cdc;}
 .pop p a.btn{display:inline-block;width:160px;height:40px;line-height:40px;}
+.Formula li{width:auto;height:auto;line-height:30px;display:block;margin:0 20px;padding:10px;float:none;}
+
+
 /*时间线*/
 .timeLine{border-left:4px solid #aaa;min-height:400px;margin-left:120px;position: relative;}
 .timeLine .icon-clock{top:-8px;left:-2px;}
@@ -125,8 +129,29 @@ span.block,.userInfoTable td .dataNormal{height:30px;line-height:30px;margin-top
 .tableCard tbody tr td,.tableCard tbody tr th{border:1px solid #efefef;border-width:1px 0;}
 .tableCard tbody tr td.first,.tableCard tbody tr th.first{border-left:1px solid #efefef;}
 .tableCard tbody tr td.last,.tableCard tbody tr th.last{border-right:1px solid #efefef;}
-.tableCard tbody tr.line{height:5px;border:0;}
-.tableCard tbody tr.line th{height:10px;border:0;}
+.tableWage tbody tr td.last,.tableWage tbody tr th.last{border-right:1px solid #efefef;border-left:1px solid #efefef;font-weight:bold;}
+.tableCard tbody tr.line,.tableWageCard tbody tr.line{height:5px;border:0;}
+.tableCard tbody tr.line th,.tableWageCard tbody tr.line td{height:10px;border:0;}
+.tableWage tbody tr:hover td{border:1px solid #4370ac;border-width:1px 0;}
+.tableWage tbody tr{cursor: pointer;}
+.tableWage tbody tr:hover td.first,.tableWage tbody tr:hover th.first{border-left:1px solid #4370ac;}
+.tableWage tbody tr:hover td.last,.tableWage tbody tr:hover th.last{border-right:1px solid #4370ac;border-left:1px solid #efefef;}
+.tableWageCard{width:100%;}
+.tableWageCard td{width:30%;border:0;}
+.tableWageCard td .innerTd{border:1px solid #efefef;margin:0 5px;padding:10px 0 10px 10px;}
+.tableWageCard .innerTd .user,.tableWageCard .innerTd .user img{width:60px;height:60px;}
+.tableWageCard .innerTd div.floatleft{border-right:1px solid #efefef;width:55%;}
+.tableWageCard .innerTd div.floatleft p{width:50%;hegiht:16px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;display:inline-block;}
+.tableWageCard .innerTd p{line-height:16px;padding-top:6px;color:#888;}
+.tableWageCard td:hover .innerTd{border:1px solid #4370ac;box-shadow:0 0 4px #4370ac;}
+.tagsList li{float: left;}
+.tagsList li a{display: inline-block;width:78px;height:28px;line-height:28px;border:1px solid #efefef;text-align: center;color:#888;border-radius:2px;margin:3px 5px 0 10px;}
+.tagsList li a:active{background:#ddd;border-color:#ddd;}
+.inputFrame{height:188px;border:1px solid #ccc;margin:0 0px 0 15px;position: relative;}
+.inputFrame textarea{width:97%;height:100px;border:0;padding:5px;}
+.inputFrame .keyboard{width:100%;height:88px;border-top:1px solid #ccc;position: absolute;bottom:0;left:0;background:#efefef;}
+.inputFrame .keyboard a{display:inline-block;width:27px;height:31px;line-height:30px;color:#333;text-align:center;border-radius:3px;background: #fff;border-bottom:1px solid #333;float: left;margin:8px 0 0 6px;}
+.inputFrame .keyboard a:active{border-top:1px solid #333;border-bottom:0;}
 /*区间设置*/
 .stepList{width:100%;}
 .stepList td{width:16.6%;height:40px;}
@@ -191,6 +216,7 @@ ul.workArea li .intBox{background:none;border-color:#ccc;}
 .processLayout{width:100%;height:20px;background:#ddd;border-radius:18px;border-top:1px solid #9a9a9a;}
 .processLayout .processBarIn{height:19px;background:#59a7f9;border-radius:18px;transition:0.3s;}
 .mailList{width:470px;background:#fff;position: absolute;top:0;bottom:0;right:20px;}
+.mailListIn{position: fixed;top:70px;bottom:10px;right:10px;}
 .word{border:1px solid #efefef;border-width:1px 0;}
 .wordList{margin-left:60px;}
 .wordList li{font-family: Arial;float: left;width:7%;text-align: center;text-indent:5px;line-height:30px;margin-left:2px;}

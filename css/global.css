@@ -184,6 +184,7 @@ a.tags:hover,a.keywords:hover{text-decoration:underline;}
 .bg1,.workday{background:#e4fde0;}
 .bg2,.weekend{background:#f4f4f4;}
 .bg3,.holiday{background:#a3cefc;}
+
 /*头像*/
 .user{height:40px;line-height:40px;}
 .user img{width:40px;height:40px;border-radius:50%;float: left;margin-right:10px;}
@@ -215,11 +216,12 @@ a.tags:hover,a.keywords:hover{text-decoration:underline;}
 .location a:hover{color:#347cdc;}
 .location a.back,.back{border-right:1px solid #efefef;padding:0 8px;}
 span.back{padding:0 20px;}
+.title .back{height:40px;border-left:1px solid #efefef;}
 .locationIn .back div{display:inline-block;height:40px;line-height:40px;border-right:1px solid #efefef;border-left:1px solid #efefef;padding:0 15px;min-width:40px;}
 .locationIn .back div p{line-height:20px;}
 .location ul li{display: inline-block;}
 .location ul li a,.location ul li span{width:auto;color:#333;padding:0 5px;}
-.dropdown-menu{background:#fff;border:1px solid #efefef;position: absolute;right:0;top:40px;padding:5px 0;box-shadow:0 0 3px #e0e0e0;display: none;}
+.dropdown-menu{background:#fff;border:1px solid #efefef;position: absolute;right:0;top:40px;padding:5px 0;box-shadow:0 0 3px #e0e0e0;display: none;z-index:3;}
 .dropdown-menu.current{display:block;}
 .dropdown-menu li{display:block!important;height:30px!important;line-height:30px!important;color:#666;text-align: left;margin:0!important;border:0!important;}
 .dropdown-menu a{display:block;width:auto;height:30px;line-height:30px;color:#666;padding:0 10px;}
@@ -232,7 +234,7 @@ span.back{padding:0 20px;}
 /*图标*/
 .icon{display:inline-block;font-size:0;line-height:0;width:20px;height:20px;background: url("../img/icon-1.png");position: absolute;top:50%;left:50%;margin:-10px 0 0 -10px;}
 a:hover .icon,a.current .icon,a.current:hover .icon-check,a.current .icon-set,.ico-calendar:hover,.has-general:hover .ico-calendar{background-image: url("../img/icon-2.png");}
-.iconBtn{display: inline-block;width:20px;height:20px;position:relative;}
+.iconBtn{display: inline-block;width:20px;height:20px;line-height:20px;position:relative;}
 .icon-search{background-position:0 0;}
 .icon-remind{background-position:0 -20px;}
 .icon-search2{background-position:0 -40px;}
@@ -250,6 +252,9 @@ a:hover .icon,a.current .icon,a.current:hover .icon-check,a.current .icon-set,.i
 .icon-relieve{background-position:0 -200px;}
 .icon-out{width:24px;background-position:0 -242px;}
 .icon-check,a:hover .icon-check{background: url("../img/icon-1.png");background-position:-40px -20px;}
+.icon-radio,a:hover .icon-radio{background: url("../img/icon-1.png");background-position:-60px -100px;}
+.icon-radio.current,a:hover .icon-radio.current{background: url("../img/icon-2.png");background-position:-60px -100px;}
+
 .icon-back{background-position:-20px -100px;}
 .icon-set{background-position:-20px -20px;}
 .ico-calendar{background-position:-40px -80px;cursor:pointer;}
@@ -271,6 +276,11 @@ a:hover .icon,a.current .icon,a.current:hover .icon-check,a.current .icon-set,.i
 .icon-clander{background-position:-40px -200px;}
 .icon-card{background-position:-40px -180px;}
 .icon-down{width:20px;height:21px;background-position:-40px -221px;}
+.icon-upload{background-position:-60px -40px;}
+.icon-tile{background-position:-60px 0;}
+.icon-list{background-position:-60px -20px;}
+.icon-calculate{background-position:-60px -60px;}
+.icon-submit{background-position:-60px -80px;}
 .icon-sync{background-position:-40px -120px;}
 .add{display:block;width:21px;height:56px;margin:-10px 0 20px -49px;position:inherit;background: url("../img/add.png") no-repeat;}
 .icon-circle-t,.current .icon-circle-t{background-position: 0 -262px;font-size:12px;line-height:20px;text-align: center;color:#888;left:25px;}
